@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie List</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <div id="search-container">
+      <header>
+        <h1>Trending Movies</h1>
+      </header>
+
+      <input type="search" id="search-input" placeholder="Search movie name here.." />
+      <button id="search">Search</button>
+    </div>
+    <div id="buttons">
+      <button class="button-value" onclick="filterMovie('all')"> All </button>
+      <button class="button-value" onclick="filterMovie('Adventure')"> Adventure </button>
+      <button class="button-value" onclick="filterMovie('Action')"> Action </button>
+      <button class="button-value" onclick="filterMovie('Horror')"> Horror </button>
+      <button class="button-value" onclick="filterMovie('Thriller')"> Thriller </button>
+    </div>
+
+    <div id="movies"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
